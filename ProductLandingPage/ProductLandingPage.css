@@ -1,0 +1,331 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	scrollbar-width: thin;
+	scroll-behavior: smooth;
+	resize: none;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+header#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color: #0d0057;
+	color: #fff;
+}
+
+header#header img#header-img {
+	height: 2.5rem;
+	width: auto;
+	border-radius: 20%;
+}
+
+header#header nav ul {
+	display: flex;
+	gap: 2rem;
+}
+
+header#header nav ul li a {
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width: 40rem) {
+	header#header {
+		flex-direction: column;
+		padding: 1rem;
+	}
+
+	header#header img#header-img {
+		height: 4rem;
+		width: auto;
+		margin-bottom: 1rem;
+	}
+
+	header#header nav ul {
+		flex-direction: column;
+		align-self: center;
+		gap: 0.4rem;
+		/* align-items: flex-start; */
+	}
+
+	header#header nav ul li {
+		align-self: center;
+	}
+
+	header#header nav ul li a {
+		font-size: 1.2rem;
+		align-items: center;
+	}
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffffff;
+	width: 100vw;
+}
+
+main div#home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	min-height: 100vh;
+	width: 100%;
+	padding: 1rem;
+	background-color: #bbd7ff;
+	color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+main div#home h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+main div#home p {
+	font-size: 2rem;
+	text-align: center;
+}
+
+main section#About_Us {
+	display: flex;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #e3dfff;
+}
+
+main section#About_Us h2 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+main section#About_Us p {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+main section#Our_Services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #c8c6ff;
+	padding: 1rem;
+}
+
+main section#Our_Services h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	display: block;
+}
+main section#Our_Services h3 {
+	font-size: 1.8rem;
+	text-align: center;
+	display: block;
+}
+main section#Our_Services p {
+	font-size: 1.2rem;
+	text-align: center;
+	display: block;
+}
+
+main section#Our_Services #video {
+	width: auto;
+	height: auto;
+	max-width: 90vw;
+	max-height: 50vh;
+	border-radius: 1rem;
+	border: #000000 solid 0.02rem;
+}
+
+main section#Pricing_Plans {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #f0f0f0;
+	padding: 1rem;
+}
+
+main section#Pricing_Plans h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	display: block;
+}
+main section#Pricing_Plans h3 {
+	font-size: 1.8rem;
+	text-align: center;
+	display: block;
+}
+main section#Pricing_Plans p {
+	font-size: 1.2rem;
+	text-align: center;
+	display: block;
+}
+main section#Pricing_Plans button {
+	font-size: 0.8rem;
+	text-align: center;
+	display: block;
+	padding: 0.5rem;
+	color: #000000;
+	background-color: #ffffff;
+	border: #000000 solid 0.02rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+main section#Our_Services span,
+main section#Pricing_Plans span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+main section#Our_Services div,
+main section#Pricing_Plans div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	height: 15rem;
+	min-height: 100%;
+	background-color: #a5b6ff;
+	border: #000000 solid 0.02rem;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+main section#Pricing_Plans div.price-card,
+main section#Our_Services div.service-card {
+	width: 15rem;
+}
+
+main div#Contact_Us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	height: 100vh;
+	width: 100%;
+	background-color: #bbd7ff;
+	padding: 1rem;
+}
+
+main div#Contact_Us h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	display: block;
+}
+
+form {
+	width: 20rem;
+	max-width: 90vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #0d0057;
+	border: #000000 solid 0.02rem;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+form input,
+form textarea {
+	background-color: #ffffff;
+	color: #000000;
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: #000000 solid 0.02rem;
+	font-size: 1rem;
+}
+
+form #submit {
+	font-size: 1.2rem;
+	text-align: center;
+	display: block;
+	padding: 0.5rem;
+	color: #000000;
+	background-color: #bbd7ff;
+	border: #000000 solid 0.02rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	margin-top: 1rem;
+	width: 50%;
+}
+
+form #submit:hover {
+	background-color: #65ab5f;
+}
+
+form label {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+	padding-top: 1rem;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+	background-color: #0d0057;
+	color: #ffffff;
+	padding: 1rem;
+}
+
+footer p {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 50rem) {
+	main section#Our_Services span,
+	main section#Pricing_Plans span {
+		flex-direction: column;
+	}
+
+	main section#Our_Services,
+	main section#Pricing_Plans {
+		padding: 20vh 0;
+	}
+}

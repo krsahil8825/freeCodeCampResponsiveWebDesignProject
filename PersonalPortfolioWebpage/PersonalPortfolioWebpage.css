@@ -1,0 +1,359 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: none;
+	list-style: none;
+	color: #ffffff;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: #525252 #0a0a23;
+}
+
+body {
+	background-color: #1b1b32;
+	padding-top: 4rem;
+}
+
+header {
+	background-color: #0a0a23;
+	padding: 1.2rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 4.5rem;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+header div a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+header div a:hover {
+	color: #ffcc00;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+header nav ul li a {
+	font-size: 1.5rem;
+}
+
+header nav ul li a,
+header label span#Open-menu,
+header label span#Close-menu {
+	color: #ffffff;
+	transition: all 0.3s ease;
+	font-weight: 600;
+}
+
+header nav ul li a:hover,
+header label span#Open-menu:hover,
+header label span#Close-menu:hover {
+	color: #ffcc00;
+}
+
+span#Open-menu,
+span#Close-menu,
+input#toggle-menu-checkbox {
+	display: none;
+	font-size: 2rem;
+}
+
+main {
+	min-height: 100vh;
+	width: 100vw;
+	left: 0;
+}
+
+section#welcome-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	flex-direction: column;
+	text-align: center;
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 1rem;
+}
+
+section#welcome-section h1 {
+	font-size: 4rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+section#welcome-section p {
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+section#About_Me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #1b1b32;
+	padding: 5vh 2rem;
+}
+
+section#About_Me h2 {
+	font-size: 3rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+section#About_Me p#about-me-description {
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: justify;
+	width: 100%;
+	padding: 1rem 0;
+}
+
+section#About_Me p#about-my-hobby,
+section#About_Me p#about-my-skills {
+	font-size: 1.4rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+	padding: 0.5rem 1.25rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 35rem) {
+	section#About_Me p#about-me-description {
+		font-size: 1.3rem;
+	}
+	section#About_Me p#about-my-hobby,
+	section#About_Me p#about-my-skills {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+}
+
+section#projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #141425;
+	padding: 5vh 0;
+}
+
+section#projects h2 {
+	font-size: 3rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+section#projects div.project-tile {
+	background-color: #1b1b32;
+	border-radius: 10px;
+	padding: 2rem;
+	margin: 2rem;
+	width: 80%;
+	max-width: 800px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+section#projects div.project-tile:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+section#projects div.project-tile h3 {
+	font-size: 2rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+section#projects div.project-tile p {
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: justify;
+	padding: 1rem 0;
+}
+
+section#projects div.project-tile a {
+	font-size: 1.5rem;
+	border: #000000 solid 0.1rem;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	background-color: #ffcc00;
+	color: #000000;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+section#projects div.project-tile a:hover {
+	background-color: #ffffff;
+	text-shadow: #000000 2px 2px 4px;
+}
+
+@media screen and (max-width: 35rem) {
+	section#projects h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	section#projects div.project-tile h3 {
+		width: 100%;
+		text-align: center;
+	}
+	section#projects div.project-tile p {
+		width: 100%;
+		text-align: left;
+	}
+}
+
+section#Contact_Me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #1b1b32;
+	padding: 5vh 0;
+}
+
+section#Contact_Me h2 {
+	font-size: 3rem;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+section#Contact_Me form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	max-width: 50rem;
+	background-color: #141425;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	gap: 1rem;
+}
+
+section#Contact_Me form input,
+section#Contact_Me form textarea {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 5px;
+	border: none;
+	background-color: #1b1b32;
+	color: #ffffff;
+	font-size: 1.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section#Contact_Me form textarea {
+	resize: none;
+	height: 10rem;
+}
+
+section#Contact_Me form input#submit {
+	background-color: #ffcc00;
+	color: #000000;
+	width: 60%;
+	text-align: center;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	height: fit-content;
+}
+
+section#Contact_Me form input#submit:hover {
+	background-color: #ffffff;
+	text-shadow: #000000 2px 2px 4px;
+}
+
+section#Contact_Me ul#social-links li a {
+	font-size: 2rem;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+
+footer {
+	background-color: #0a0a23;
+	padding: 1rem;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.5rem;
+	bottom: 0;
+	width: 100%;
+	text-transform: capitalize;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0.5rem 0;
+}
+
+footer ul li a i {
+	color: #ffffff;
+	font-size: 1.5rem;
+	transition: all 0.3s ease;
+}
+
+footer ul li a i:hover {
+	color: #ffcc00;
+}
+
+@media screen and (max-width: 48rem) {
+	header nav ul {
+		display: none;
+		position: fixed;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		background-color: #0a0a23;
+		width: 100%;
+		top: 4rem;
+		left: 0;
+		padding: 1rem;
+	}
+
+	header label span#Open-menu {
+		display: block;
+	}
+
+	header label span#Close-menu {
+		display: none;
+	}
+}

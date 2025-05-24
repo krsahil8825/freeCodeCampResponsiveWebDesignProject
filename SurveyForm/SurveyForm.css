@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: linear-gradient(
+			rgba(0, 34, 89, 0.9),
+			rgba(0, 34, 89, 0.9)
+		),
+		url("https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	min-height: 100vh;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+
+p.p {
+	font-size: 1rem;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 400;
+	margin: 0 1rem;
+	text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 1);
+	font-style: italic;
+	font-family: "Courier New", Courier, monospace;
+	text-transform: capitalize;
+}
+
+h1 {
+	color: #fff;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 400;
+	margin: 2rem 1rem 0 1rem;
+	text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 1);
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 1rem;
+	padding: 2rem 2.5rem;
+	justify-content: center;
+	background-color: rgba(21, 0, 48, 0.8);
+	margin: 0 1rem;
+	border-radius: 1rem;
+	padding-bottom: 5rem;
+}
+
+form label,
+form p {
+	font-size: 1.2rem;
+	font-weight: 700;
+	font-family: "Courier New", Courier, monospace;
+	color: #ffffff;
+	text-align: left;
+}
+
+form #name,
+form #email,
+form #number,
+form select {
+	width: 100%;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+	border: none;
+	outline: double 0.2rem #fff;
+	font-size: 1rem;
+	font-family: "Courier New", Courier, monospace;
+}
+
+form textarea {
+	width: 100%;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+	border: none;
+	outline: double 0.2rem #fff;
+	font-size: 1rem;
+	font-family: "Courier New", Courier, monospace;
+	resize: none;
+	height: 10rem;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+	margin-left: 2rem;
+}
+
+form .radioCheckbox {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	align-items: center;
+	align-self: start;
+	color: rgb(222, 222, 222);
+	font-weight: 400;
+}
+
+form input[type="submit"] {
+	background-color: #fff;
+	color: #000;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	outline: double 0.2rem #fff;
+	border-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+	background-color: #000;
+	outline: double 0.2rem #ffffff;
+	color: #fff;
+}

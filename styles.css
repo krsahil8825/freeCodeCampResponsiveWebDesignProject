@@ -1,0 +1,197 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: none;
+	list-style: none;
+	scrollbar-width: thin;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #272727;
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	margin: 0 2rem;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+    color: #007bff;
+}
+
+h1::before {
+	content: "";
+	display: block;
+	width: 100%;
+	min-height: 10vh;
+}
+
+h1::after {
+	content: "";
+	display: block;
+	width: 100%;
+	min-height: 10vh;
+}
+
+section#Certification {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+section#Certification img {
+	max-width: 48rem;
+	height: auto;
+	border-radius: 0.8rem;
+	box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+}
+
+section#Certification img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+
+section.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	gap: 2rem;
+}
+
+section.project div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background-color: #333;
+	border-radius: 0.8rem;
+	box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+	width: 100%;
+	max-width: 48rem;
+	transition: all 0.3s ease;
+}
+
+section.project div:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+
+section.project div h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+}
+
+section.project div p {
+	font-size: 1.2rem;
+	color: #ffffff;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+section.project div a {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: #007bff;
+	color: #ffffff;
+	border-radius: 0.5rem;
+	border: 0 0 0.4rem solid #007bff;
+	box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: all 0.3s ease;
+}
+
+section.project div a:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+section#Tools_and_Technology {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	gap: 2rem;
+	background-color: #212121;
+}
+
+section#Tools_and_Technology h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+section#Tools_and_Technology ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	column-gap: 2rem;
+    height: auto;
+	overflow: hidden;
+}
+
+section#Tools_and_Technology ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    font-weight: 700;
+	padding: 2rem;
+	background-color: #333;
+	border-radius: 0.8rem;
+	box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+	width: 100%;
+	max-width: 20rem;
+	transition: all 0.3s ease;
+}
+
+section#Tools_and_Technology ul li:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000;
+    min-height: 3rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}

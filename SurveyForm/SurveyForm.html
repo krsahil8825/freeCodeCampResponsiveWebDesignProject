@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Kumar Sahil's Survey form for FreeCodeCamp Project, showcasing various web design skills.">
+    <meta name="keywords" content="FreeCodeCamp, Survey Form, HTML, CSS, Web Development">
+    <meta name="author" content="Kumar Sahil">
+    <title>Kumar Sahil's Survay form for FreeCodeCamp Project</title>
+    <link rel="stylesheet" href="/SurveyForm/SurveyForm.css">
+    <link rel="shortcut icon" href="/icon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <h1 id="title">Survey for developers</h1>
+    <p class="p" id="description">Please fill out this survey form. It will help us understand developers' perspectives
+        on AI in the job market.</p>
+
+    <!-- Form start -->
+    <form id="survey-form" action="index.html">
+        <!-- Basic Imformation about developer -->
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+        <label for="name" id="email-label">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        <label for="name" id="number-label">Experience:</label>
+        <input type="number" name="number" id="number" placeholder="How much Experience Do You Have (Year)" min="0"
+            max="70" required>
+        <p>What is your role?</p>
+        <select name="dropdown" id="dropdown" required>
+            <option value="">Select your role</option>
+            <option value="1">Working Professional</option>
+            <option value="2">Student</option>
+            <option value="3">other</option>
+        </select>
+
+        <!-- Asking Questions -->
+        <label>What do you think about AI taking over the job market?</label>
+        <label class="radioCheckbox" for="AI1"><input type="radio" name="AI" id="AI1" value="yes" required checked>
+            Yes</label>
+        <label class="radioCheckbox" for="AI5"><input type="radio" name="AI" id="AI5" value="Junior_job_at_risk"
+                required> Junior Job at risk</label>
+        <label class="radioCheckbox" for="AI2"><input type="radio" name="AI" id="AI2" value="no" required> No</label>
+        <label class="radioCheckbox" for="AI3"><input type="radio" name="AI" id="AI3" value="maybe" required>
+            Maybe</label>
+        <label class="radioCheckbox" for="AI4"><input type="radio" name="AI" id="AI4" value="not sure" required> Not
+            Sure</label>
+
+        <p>Which language do you use on a daily basis?</p>
+        <label class="radioCheckbox" for="html"><input type="checkbox" name="html" id="html" value="HTML"> HTML</label>
+        <label class="radioCheckbox" for="css"><input type="checkbox" name="css" id="css" value="CSS"> CSS</label>
+        <label class="radioCheckbox" for="js"><input type="checkbox" name="js" id="js" value="JavaScript">
+            JavaScript</label>
+        <label class="radioCheckbox" for="python"><input type="checkbox" name="python" id="python" value="Python">
+            Python</label>
+        <label class="radioCheckbox" for="java"><input type="checkbox" name="java" id="java" value="Java"> Java</label>
+        <label class="radioCheckbox" for="c"><input type="checkbox" name="c" id="c" value="C"> C</label>
+        <label class="radioCheckbox" for="cpp"><input type="checkbox" name="cpp" id="cpp" value="C++"> C++</label>
+        <label class="radioCheckbox" for="csharp"><input type="checkbox" name="csharp" id="csharp" value="C#">
+            C#</label>
+        <label class="radioCheckbox" for="php"><input type="checkbox" name="php" id="php" value="PHP"> PHP</label>
+        <label class="radioCheckbox" for="ruby"><input type="checkbox" name="ruby" id="ruby" value="Ruby"> Ruby</label>
+        <label class="radioCheckbox" for="swift"><input type="checkbox" name="swift" id="swift" value="Swift">
+            Swift</label>
+        <label class="radioCheckbox" for="go"><input type="checkbox" name="go" id="go" value="Go"> Go</label>
+        <label class="radioCheckbox" for="sql"><input type="checkbox" name="sql" id="sql" value="SQL"> SQL</label>
+        <label class="radioCheckbox" for="r"><input type="checkbox" name="r" id="r" value="R"> R</label>
+        <label class="radioCheckbox" for="kotlin"><input type="checkbox" name="kotlin" id="kotlin" value="Kotlin">
+            Kotlin</label>
+        <label class="radioCheckbox" for="typescript"><input type="checkbox" name="typescript" id="typescript"
+                value="TypeScript"> TypeScript</label>
+        <label class="radioCheckbox" for="rust"><input type="checkbox" name="rust" id="rust" value="Rust"> Rust</label>
+        <label class="radioCheckbox" for="dart"><input type="checkbox" name="dart" id="dart" value="Dart"> Dart</label>
+        <label class="radioCheckbox" for="matlab"><input type="checkbox" name="matlab" id="matlab" value="Matlab">
+            Matlab</label>
+        <label class="radioCheckbox" for="assembly"><input type="checkbox" name="assembly" id="assembly"
+                value="Assembly"> Assembly</label>
+        <label class="radioCheckbox" for="pascal"><input type="checkbox" name="pascal" id="pascal" value="Pascal">
+            Pascal</label>
+        <label class="radioCheckbox" for="objective-c"><input type="checkbox" name="objective-c" id="objective-c"
+                value="Objective-C"> Objective-C</label>
+        <label class="radioCheckbox" for="perl"><input type="checkbox" name="perl" id="perl" value="Perl"> Perl</label>
+        <label class="radioCheckbox" for="shell"><input type="checkbox" name="shell" id="shell" value="Shell">
+            Shell</label>
+
+        <p>What are your thoughts on the fear that AI will take over the job market?</p>
+        <textarea name="textarea" id="textarea" required placeholder="Write Your thaughts"></textarea>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+</html>

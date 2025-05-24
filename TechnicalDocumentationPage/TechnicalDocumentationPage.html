@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Bash Script Documentation." />
+    <meta name="keywords" content="Bash, Scripting, Documentation, Programming, Shell" />
+    <meta name="author" content="Kumar Sahil" />
+    <title>Bash Script Documentation</title>
+    <link rel="stylesheet" href="/TechnicalDocumentationPage/TechnicalDocumentationPage.css" />
+    <link rel="shortcut icon" href="/icon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Bash Script Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Variables_Declarations">Variables Declarations</a></li>
+            <li><a class="nav-link" href="#Operators_in_Bash">Operators in Bash</a></li>
+            <li><a class="nav-link" href="#If_Else_Statement">If Else Statement</a></li>
+            <li><a class="nav-link" href="#Loops_in_Bash">Loops in Bash</a></li>
+            <li><a class="nav-link" href="#Creating_Own_Functions">Creating Own Functions</a></li>
+            <li><a class="nav-link" href="#Arrays_in_Bash">Arrays in Bash</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    A shell is a text-based interface that lets you talk to your computer.
+                </p>
+
+                <p>
+                    There are different types of shells, but Bash (Bourne Again SHell) is the most popular because it's
+                    powerful and easy to use.
+                </p>
+                <p>
+                    <strong>Why we Use Bash?</strong>
+                </p>
+                <ul>
+                    <li>It is widely available on Unix/Linux systems, making scripts portable.</li>
+                    <li>It supports command-line editing, job control, and shell functions.</li>
+                    <li>It has a large community and extensive documentation.</li>
+                </ul>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="Basic_Syntax">
+            <header>Basic Syntax</header>
+            <article>
+                <p>
+                    Bash scripts are sequences of commands executed by the Bash shell. They automate tasks and can
+                    beused to perform complex operations. Understanding Bash syntax is crucial for writing effective
+                    scripts
+                </p>
+                <p>
+                    <stong>Basic syntax includes:</stong>
+                </p>
+                <ul>
+                    <li>Comments: Lines starting with # are comments and are ignored by the shell.</li>
+                    <li>Variables: Used to store data. Defined using the syntax <code>variable_name=value</code>.
+                    </li>
+                    <li>Commands: Executable commands or scripts.</li>
+                    <li>Control structures: If-else statements, loops, and functions.</li>
+                    <li>Input/Output redirection: Using <code>&gt;</code> to redirect output to a file and
+                        <code>&lt;</code> to read from a file.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                <p>
+                    The classic "Hello, World!" program is a simple script that prints "Hello, World!" to the
+                    terminal. It serves as a basic introduction to Bash scripting.
+                </p>
+                <p>
+                    <strong>Example:</strong>
+                </p>
+                <div>
+                    <code>#!/bin/bash</code>
+                    <br />
+                    <code>echo "Hello, World!"</code>
+                </div>
+                <p>
+                    Save the script in a file (e.g., hello.sh), make it executable using <code>chmod +x hello.sh</code>,
+                    and run it with <code>./hello.sh</code>.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>
+                    This section introduces the different data types available in Bash scripting
+                </p>
+                <ul>
+                    <li>
+                        <strong>String:</strong> A sequence of characters enclosed in quotes. Example:
+                        <code>name="John"</code>
+                    </li>
+                    <li>
+                        <strong>Integer:</strong> A whole number without decimal points. Example: <code>age=30</code>
+                    </li>
+                    <li>
+                        <strong>Float:</strong> A number with decimal points. Example: <code>pi=3.14</code>
+                    </li>
+                    <li>
+                        <strong>Array:</strong> A collection of elements stored under a single variable name. Example:
+                        <code>fruits=("apple" "banana" "cherry")</code>
+                    </li>
+                    <li>
+                        <strong>Associative Array:</strong> A collection of key-value pairs. Example:
+                        <code>declare -A colors=(["red"]="#FF0000" ["green"]="#00FF00")</code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Variables_Declarations">
+            <header>Variables Declarations</header>
+            <article>
+                <p>
+                    Variables in Bash are used to store data that can be used and manipulated throughout your script or
+                    command-line session. Bash variables are untyped, meaning they can hold any type of data.
+                </p>
+
+                <p>
+                    <strong>
+                        To declare a variable in Bash, simply assign a value to a name without spaces. For example:
+                    </strong>
+                </p>
+                <div>
+                    <code>my_variable="Hello, World!"</code>
+                    <br />
+                    <code>number=42</code>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="Operators_in_Bash">
+            <header>Operators in Bash</header>
+            <article>
+                <p>
+                    <strong>Comparison Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>-eq</code>: Equal to</li>
+                    <li><code>-ne</code>: Not equal to</li>
+                    <li><code>-lt</code>: Less than</li>
+                    <li><code>-le</code>: Less than or equal to</li>
+                    <li><code>-gt</code>: Greater than</li>
+                    <li><code>-ge</code>: Greater than or equal to</li>
+                </ul>
+                <p>
+                    <strong>String Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>=</code>: Equal to</li>
+                    <li><code>!=</code>: Not equal to</li>
+                    <li><code>-z</code>: String is null (empty)</li>
+                    <li><code>-n</code>: String is not null (not empty)</li>
+                </ul>
+                <p>
+                    <strong>Arithmetic Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>+</code>: Addition</li>
+                    <li><code>-</code>: Subtraction</li>
+                    <li><code>*</code>: Multiplication</li>
+                    <li><code>/</code>: Division</li>
+                    <li><code>%</code>: Modulus (remainder)</li>
+                </ul>
+                <p>
+                    <strong>Logical Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>&&</code>: Logical AND</li>
+                    <li><code>||</code>: Logical OR</li>
+                    <li><code>!</code>: Logical NOT</li>
+                </ul>
+                <p>
+                    <strong>File Test Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>-e</code>: File exists</li>
+                    <li><code>-f</code>: File is a regular file</li>
+                    <li><code>-d</code>: File is a directory</li>
+                    <li><code>-r</code>: File is readable</li>
+                    <li><code>-w</code>: File is writable</li>
+                    <li><code>-x</code>: File is executable</li>
+                </ul>
+                <p>
+                    <strong>Assignment Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>=</code>: Assign value</li>
+                    <li><code>+=</code>: Add and assign</li>
+                    <li><code>-=</code>: Subtract and assign</li>
+                    <li><code>*=</code>: Multiply and assign</li>
+                    <li><code>/=</code>: Divide and assign</li>
+                </ul>
+                <p>
+                    <strong>Bitwise Operators:</strong>
+                </p>
+                <ul>
+                    <li><code>&</code>: Bitwise AND</li>
+                    <li><code>|</code>: Bitwise OR</li>
+                    <li><code>^</code>: Bitwise XOR</li>
+                    <li><code>~</code>: Bitwise NOT</li>
+                    <li><code>&lt;&lt;</code>: Left shift</li>
+                    <li><code>&gt;&gt;</code>: Right shift</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="If_Else_Statement">
+            <header>If Else Statement</header>
+            <article>
+                <p>
+                    If statements allow you to execute code based on a condition. If the condition is true, the code
+                    block will run.
+                </p>
+                <p>
+                    <stong>Basic syntax:</strong>
+                </p>
+                <div>
+                    <code>if [ condition ]; then</code>
+                    <br />
+                    <code>    # code to execute if condition is true</code>
+                    <br />
+                    <br />
+                    <code>else</code>
+                    <br />
+                    <code>    # code to execute if condition is false</code>
+                    <br />
+                    <code>fi</code>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="Loops_in_Bash">
+            <header>Loops in Bash</header>
+            <article>
+                <p>
+                    This section covers the use of loops in Bash scripting, including for, while, and until loops.
+                </p>
+
+                <p>
+                    Loops are used to execute a block of code multiple times. Bash supports several types of loops:
+                </p>
+
+                <p>
+                    <strong>For Loop:</strong>
+                </p>
+                <ul>
+                    <li>Used to iterate over a list of items.</li>
+                    <li>Syntax: <code>for item in list; do</code></li>
+                </ul>
+                <p>
+                    <strong>While Loop:</strong>
+                </p>
+                <ul>
+                    <li>Executes a block of code as long as a condition is true.</li>
+                    <li>Syntax: <code>while [ condition ]; do</code></li>
+                </ul>
+                <p>
+                    <strong>Until Loop:</strong>
+                </p>
+                <ul>
+                    <li>Executes a block of code until a condition becomes true.</li>
+                    <li>Syntax: <code>until [ condition ]; do</code></li>
+                </ul>
+                <p>
+                    <strong>Break and Continue:</strong>
+                </p>
+                <ul>
+                    <li><code>break</code>: Exits the loop.</li>
+                    <li><code>continue</code>: Skips the current iteration and continues with the next one.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Creating_Own_Functions">
+            <header>Creating Own Functions</header>
+            <article>
+                <p>
+                    To define a function in Bash, use the following syntax. The function name is followed by
+                    parentheses, and
+                    the function body is enclosed in curly braces:
+                </p>
+
+                <div>
+                    <p>Basic syntax:</p>
+                    <code>function_name() {</code>
+                    <br />
+                    <code>    # code to execute</code>
+                    <br />
+                    <code>}</code>
+                    <br />
+                    <p>Example:</p>
+                    <code>greet() {</code>
+                    <br />
+                    <code>    echo "Hello, $1!"</code>
+                    <br />
+                    <code>}</code>
+                    <br />
+                    <code>greet "World"</code>
+                    <br />
+                    <code>Output: Hello, World!</code>
+                </div>
+
+                <p>
+                    Functions can take arguments, which are accessed using <code>$1</code>, <code>$2</code>, etc. The
+                    return value of a function can be captured using the <code>return</code> statement.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Arrays_in_Bash">
+            <header>Arrays in Bash</header>
+            <article>
+                <p>
+                    Arrays in Bash are used to store multiple values in a single variable. They can be indexed or
+                    associative.
+                </p>
+
+                <p>
+                    <strong>Indexed Arrays:</strong>
+                </p>
+                <ul>
+                    <li>
+                        Defined using parentheses: <code>array_name=(value1 value2 value3)</code>
+                    </li>
+                    <li>
+                        Accessed using indices: <code>${array_name[index]}</code>
+                    </li>
+                    <li>
+                        Example: <code>fruits=("apple" "banana" "cherry")</code>
+                    </li>
+                    <li>
+                        Accessing elements: <code>${fruits[0]}</code> (outputs "apple")
+                    </li>
+                </ul>
+                <p>
+                    <strong>Associative Arrays:</strong>
+                </p>
+                <ul>
+                    <li>
+                        Defined using the <code>declare -A</code> command: <code>declare -A array_name</code>
+                    </li>
+                    <li>
+                        Accessed using keys: <code>${array_name[key]}</code></li>
+                    <li>
+                        Example: <code>declare -A colors=(["red"]="#FF0000" ["green"]="#00FF00")</code>
+                    </li>
+                    <li>
+                        Accessing elements: <code>${colors["red"]}</code> (outputs "#FF0000")
+                    </li>
+                </ul>
+                <p>
+                    <strong>Looping through Arrays:</strong>
+                </p>
+                <ul>
+                    <li>
+                        Indexed arrays: <code>for fruit in "${fruits[@]}"; do echo $fruit; done</code>
+                    </li>
+                    <li>
+                        Associative arrays: <code>for color in "${!colors[@]}"; do echo $color; done</code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <article>
+                <p>
+                    In conclusion, Bash scripting is a powerful tool for automating tasks and managing system
+                    operations. By understanding the syntax, variables, data types, operators, control flow, loops,
+                    functions, and arrays, you can create efficient and effective scripts to streamline your workflow.
+                </p>
+
+                <p>
+                    With practice and experience, you can leverage the full potential of Bash scripting to enhance your
+                    productivity and simplify complex tasks.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>
+                    For more information and examples, refer to the following resources:
+                    <a href="https://www.w3schools.com/bash/index.php">W3 Schools</a>
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

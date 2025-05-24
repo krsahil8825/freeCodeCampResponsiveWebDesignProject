@@ -69,6 +69,12 @@ section#Certification img:hover {
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
 }
 
+@media screen and (max-width: 50rem) {
+	section#Certification img {
+		max-width: 100%;
+	}
+}
+
 section.project {
 	display: flex;
 	flex-direction: column;

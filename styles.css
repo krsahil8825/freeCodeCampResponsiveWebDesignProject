@@ -161,6 +161,7 @@ section#Tools_and_Technology ul {
 	column-gap: 2rem;
     height: auto;
 	overflow: hidden;
+	padding: 1rem;
 }
 
 section#Tools_and_Technology ul li {

@@ -326,10 +326,15 @@ footer ul {
 	margin: 0.5rem 0;
 }
 
+footer ul li a {
+	overflow: hidden;
+}
+
 footer ul li a i {
 	color: #ffffff;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	transition: all 0.3s ease;
+	overflow: hidden;
 }
 
 footer ul li a i:hover {
